@@ -1,0 +1,3 @@
+CREATE TABLESPACE bookuser DATAFILE '/bizwork/oracle/data/bookuser.dbf' SIZE 1M AUTOEXTEND ON NEXT 1K;
+CREATE USER bookuser IDENTIFIED BY 1234 DEFAULT TABLESPACE bookuser;
+GRANT DBA TO bookuser;
