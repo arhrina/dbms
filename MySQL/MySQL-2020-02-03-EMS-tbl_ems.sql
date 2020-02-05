@@ -33,6 +33,7 @@ SHOW SESSION VARIABLES LIKE 'collation_connection';
 -- mysql 5.x 이하에서는 UTF8과 latin1 방식으로 설정되어 많은 문제를 일으켰었다
 -- mysql 5.x 이하의 UTF8은 3byte 방식 가변저장방식으로 emoji와 같은 특수문자는 인식하지 못했다
 
+SELECT * FROM tbl_bbs;
 
 
 

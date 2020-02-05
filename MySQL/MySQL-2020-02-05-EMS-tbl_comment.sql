@@ -1,0 +1,14 @@
+-- BBS 테이블 추가. 2020 2 5
+use emsdb;
+
+DROP TABLE tbl_comment;
+
+CREATE TABLE tbl_comment(
+CMT_ID	BIGINT	NOT NULL	PRIMARY KEY AUTO_INCREMENT,
+CMT_P_ID	BIGINT	DEFAULT 0,
+CMT_WRITER	VARCHAR(20)	NOT NULL	,
+CMT_DATE	DATETIME DEFAULT CURRENT_TIMESTAMP, -- mysql 5.6 이상에서 사용. 현재 DB에 저장되는 시간의 날짜와 시간을 저장
+CMT_TEXT	VARCHAR(400)		
+);
+
+SELECT * FROM tbl_comment;
