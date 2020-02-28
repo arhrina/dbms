@@ -15,6 +15,3 @@ VALUES('user','ROLE_USER');
 SELECT * FROM users;
 SELECT * FROM authorities;
 COMMIT ;
-
-
-
