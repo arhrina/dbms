@@ -1,0 +1,28 @@
+-- bbsfinal 유저
+
+CREATE TABLE tbl_bbs(
+b_id	NUMBER		PRIMARY KEY,
+b_p_id	NUMBER		,
+b_date_time	VARCHAR2(30)	NOT NULL	,
+b_writer	nVARCHAR2(30)	NOT NULL	,
+b_subject	nVARCHAR2(125)	NOT NULL	,
+b_content	nVARCHAR2(2000)		,
+b_file	nVARCHAR2(125)		
+);
+
+CREATE SEQUENCE SEQ_BBS
+START WITH 1 INCREMENT BY 1;
+
+
+CREATE TABLE tbl_comment(
+c_id	NUMBER	PRIMARY KEY,
+c_b_id NUMBER NOT NULL,
+c_p_id	NUMBER,
+c_date_time	VARCHAR2(30)	NOT NULL,
+c_writer	nVARCHAR2(30)	NOT NULL,
+c_subject	nVARCHAR2(125)	NOT NULL
+);
+CREATE SEQUENCE SEQ_COM
+START WITH 1 INCREMENT BY 1;
+
+SELECT * FROM tbl_comment;
